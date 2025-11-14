@@ -42,7 +42,7 @@ void setup() {
 
   display.setCursor(10, 70);
   display.setTextSize(3);
-  display.print("Paolo ");
+  display.print("Paolo Boss");
 
   display.setCursor(10, 110);
   display.setTextSize(2);
