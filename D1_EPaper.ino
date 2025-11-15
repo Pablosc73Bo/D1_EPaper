@@ -1,9 +1,12 @@
+const char* Version     = "V.002";
+
 // Installare:
 // GxEPD2         (by Jean-Marc Zingg from IDE)
 // Bus IO Library (by Adafruit from IDE)
 // GFX Library    (by Adafruit from IDE)
 
 // V.001 14/11/2025 Inserito esempio Bitmap da caricare con l'ausilio di Image2Lcd
+// V.002 15/11/2025 Inserita versione firmware a display
 
 #include <GxEPD2_BW.h>
 #include <GxEPD2_3C.h>
@@ -59,6 +62,11 @@ void setup() {
   // Visualizzo sul display la prima pagina
   do {
     //display.setFont(&FreeSerif18pt7b);
+    display.setCursor(170, 0);
+    display.setTextSize(1);
+    display.print(Version);
+
+
     display.setCursor(10, 30);
     display.setTextSize(3);
     display.print("D1_EPaper");
